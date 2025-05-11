@@ -1,0 +1,23 @@
+public class Matematika {
+    // Penjumlahan dua bilangan
+    public int tambah(int a, int b) {
+        return a + b;
+    }
+
+    // Penjumlahan tiga bilangan
+    public int tambah(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    // Penjumlahan bilangan desimal
+    public double tambah(double a, double b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        Matematika m = new Matematika();
+        System.out.println("2 + 3 = " + m.tambah(2, 3));
+        System.out.println("1 + 2 + 3 = " + m.tambah(1, 2, 3));
+        System.out.println("2.5 + 3.7 = " + m.tambah(2.5, 3.7));
+    }
+}
