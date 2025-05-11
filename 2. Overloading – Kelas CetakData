@@ -1,0 +1,20 @@
+public class CetakData {
+    public void cetak(String nama) {
+        System.out.println("Nama: " + nama);
+    }
+
+    public void cetak(int umur) {
+        System.out.println("Umur: " + umur);
+    }
+
+    public void cetak(String nama, int umur) {
+        System.out.println("Nama: " + nama + ", Umur: " + umur);
+    }
+
+    public static void main(String[] args) {
+        CetakData data = new CetakData();
+        data.cetak("Rani");
+        data.cetak(20);
+        data.cetak("Rani", 20);
+    }
+}
