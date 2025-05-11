@@ -1,0 +1,38 @@
+class Pegawai {
+    String nama = "Umum";
+
+    void kerja() {
+        System.out.println(nama + " sedang bekerja.");
+    }
+}
+
+class Manajer extends Pegawai {
+    Manajer() {
+        nama = "Manajer";
+    }
+
+    @Override
+    void kerja() {
+        System.out.println(nama + " mengatur tim.");
+    }
+}
+
+class Programmer extends Pegawai {
+    Programmer() {
+        nama = "Programmer";
+    }
+
+    @Override
+    void kerja() {
+        System.out.println(nama + " menulis kode.");
+    }
+}
+
+public class Kantor {
+    public static void main(String[] args) {
+        Pegawai p1 = new Manajer();
+        Pegawai p2 = new Programmer();
+        p1.kerja();
+        p2.kerja();
+    }
+}
