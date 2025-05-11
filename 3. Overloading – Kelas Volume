@@ -1,0 +1,24 @@
+public class Volume {
+    public double hitungVolume(double sisi) {
+        return sisi * sisi * sisi; // kubus
+    }
+
+    public double hitungVolume(double panjang, double lebar, double tinggi) {
+        return panjang * lebar * tinggi; // balok
+    }
+
+    public double hitungVolume(double jariJari, double tinggi, boolean isSilinder) {
+        if (isSilinder) {
+            return Math.PI * jariJari * jariJari * tinggi;
+        } else {
+            return 0;
+        }
+    }
+
+    public static void main(String[] args) {
+        Volume v = new Volume();
+        System.out.println("Volume Kubus: " + v.hitungVolume(3));
+        System.out.println("Volume Balok: " + v.hitungVolume(3, 4, 5));
+        System.out.println("Volume Silinder: " + v.hitungVolume(3, 7, true));
+    }
+}
